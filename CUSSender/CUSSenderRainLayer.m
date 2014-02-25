@@ -22,7 +22,7 @@
 -(CAEmitterCell *)createSubLayer:(UIImage *)image{
     CAEmitterCell *cellLayer = [CAEmitterCell emitterCell];
     
-    cellLayer.birthRate		= 15.0;
+    cellLayer.birthRate		= 30.0;
     cellLayer.lifetime		= 50;
 	
 	cellLayer.velocity		= -1000;				// falling down slowly

@@ -23,8 +23,8 @@
 
 -(CAEmitterCell *)createSubLayer:(UIImage *)image{
     CAEmitterCell *cellLayer = [CAEmitterCell emitterCell];
-    cellLayer.birthRate		= 3.0;
-    cellLayer.lifetime		= 120.0;
+    cellLayer.birthRate		= 3;
+    cellLayer.lifetime		= 50.0;
 	
 	cellLayer.velocity		= -80;				// falling down slowly
 	cellLayer.velocityRange = 20;
@@ -32,9 +32,13 @@
     cellLayer.emissionRange = 0.5 * M_PI;		// some variation in angle
     cellLayer.spinRange		= 0.5 * M_PI;		// slow spin
     cellLayer.scale = 0.2;
+    cellLayer.scaleRange = 0.1;
     cellLayer.contents		= (id)[image CGImage];
     
     cellLayer.color			= [[UIColor whiteColor] CGColor];
+    cellLayer.redRange = 1.0;
+    cellLayer.greenRange = 1.0;
+    cellLayer.blueRange = 1.0;
     
     return cellLayer;
 }

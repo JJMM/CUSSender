@@ -46,7 +46,6 @@
     // Spawn points for the flakes are within on the outline of the line
     parentLayer.emitterMode		= kCAEmitterLayerOutline;
 	parentLayer.emitterShape	= kCAEmitterLayerLine;
-    parentLayer.renderMode		= kCAEmitterLayerAdditive;
     
     parentLayer.shadowOpacity = 1.0;
 	parentLayer.shadowRadius  = 0.0;

@@ -27,7 +27,7 @@
 	cellLayer.yAcceleration = 2;
     cellLayer.emissionRange = 0.5 * M_PI;		// some variation in angle
     //    cellLayer.spinRange		= 0.25 * M_PI;		// slow spin
-    cellLayer.scale = 0.4;
+    cellLayer.scale = 0.35;
     cellLayer.contents		= (id)[image CGImage];
     
     cellLayer.color			= [[UIColor whiteColor] CGColor];
