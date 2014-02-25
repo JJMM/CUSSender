@@ -23,7 +23,7 @@
     CAEmitterCell *cellLayer = [CAEmitterCell emitterCell];
     
     cellLayer.birthRate		= 30.0;
-    cellLayer.lifetime		= 50;
+    cellLayer.lifetime		= 5;
 	
 	cellLayer.velocity		= -1000;				// falling down slowly
 	cellLayer.velocityRange = 0;
