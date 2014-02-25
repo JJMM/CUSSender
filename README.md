@@ -6,3 +6,25 @@ please pay attention to add Star, your support is my greatest motivation, thank 
 To on github demand, advice and bugs
 
 ![image](https://github.com/JJMM/CUSResources/raw/master/CUSSenderIntr.gif)
+
+## START
+
+```objective-c
+#import "CUSSender.h"
+
+CALayer *layer = [[CUSSenderSnowLayer alloc]init];
+[self.view.layer addSublayer:layer];
+```
+## All kinds
+
+- CUSSenderStarLayer
+- CUSSenderBirthdayLayer
+- CUSSenderKissLayer
+- CUSSenderGoldLayer
+- CUSSenderSnowLayer
+- CUSSenderRainLayer
+- CUSSenderFlowerLayer
+
+
+## License
+AFNetworking is available under the Apache 2.0 license. See the LICENSE file for more info.
