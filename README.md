@@ -27,4 +27,4 @@ CALayer *layer = [[CUSSenderSnowLayer alloc]init];
 
 
 ## License
-AFNetworking is available under the Apache 2.0 license. See the LICENSE file for more info.
+CUSSender is available under the Apache 2.0 license. See the LICENSE file for more info.
