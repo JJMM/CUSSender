@@ -13,6 +13,7 @@
 @end
 
 @implementation CUSSenderFallLayer
+@synthesize delayHideTime = _delayHideTime;;
 @synthesize imageNameArray = _imageNameArray;
 
 - (id)initWithImageName:(NSString *)imageName{
@@ -55,7 +56,7 @@
 
     
     CAEmitterCell* containerLayer = [self createSubLayerContainer];
-    
+    containerLayer.name = @"containerLayer";
     NSMutableArray *subLayerArray = [NSMutableArray array];
     NSArray *contentArray = [self getContentsByArray:self.imageNameArray];
     for (UIImage *image in contentArray) {
@@ -68,6 +69,14 @@
     }else{
         parentLayer.emitterCells = subLayerArray;
     }
+}
+-(void)setDelayHideTime:(CGFloat)delayHideTime{
+    _delayHideTime = delayHideTime;
+    [self performSelector:@selector(stopFall) withObject:nil afterDelay:1];
+}
+
+-(void)stopFall{
+    [self setValue:[NSNumber numberWithInt:0] forKeyPath:@"emitterCells.containerLayer.birthRate"];
 }
 
 -(CAEmitterCell*)createSubLayerContainer{

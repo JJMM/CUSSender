@@ -11,9 +11,9 @@
 #import "CUSSender.h"
 
 @interface CUSLayerVC : CUSViewController
-@property(nonatomic,strong)CALayer *rootLayer;
+@property(nonatomic,strong)CUSSenderFallLayer *rootLayer;
 
--(CALayer *)createLayer;
+-(CUSSenderFallLayer *)createLayer;
 
 -(NSString *)getBackgroundImageName;
 @end

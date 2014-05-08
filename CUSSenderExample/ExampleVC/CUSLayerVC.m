@@ -17,6 +17,7 @@
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     self.rootLayer = [self createLayer];
+    self.rootLayer.delayHideTime = 1;
     [self.view.layer addSublayer:self.rootLayer];
 }
 
@@ -27,7 +28,7 @@
     }
 }
 
--(CALayer *)createLayer{
+-(CUSSenderFallLayer *)createLayer{
     return nil;
 }
 

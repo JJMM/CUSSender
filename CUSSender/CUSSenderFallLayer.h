@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "CUSSenderLayer.h"
 @interface CUSSenderFallLayer : CUSSenderLayer
+@property(nonatomic,assign)CGFloat delayHideTime;
 - (id)initWithImageName:(NSString *)imageName;
 - (id)initWithImageNameArray:(NSArray *)imageNameArray;
 
